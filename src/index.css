@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F5F5F5] font-primary text-base leading-relaxed;
+  }
+
+  .section {
+    @apply py-[50px] lg:py-[70px];
+  }
+
+  .title-hero {
+    @apply text-3xl lg:text-[64px] lg:leading-tight font-semibold lg:max-w-[888px] lg:mx-auto;
+  }
+
+  .subtitle-hero {
+    @apply lg:text-xl max-w-[627px] mx-auto;
+  }
+
+  .title-stats {
+    @apply text-2xl lg:text-4xl font-semibold;
+  }
+
+  .subtitle-stats {
+    @apply max-w-[120px] text-base lg:text-xl font-light mx-auto;
+  }
+
+  .title {
+    @apply text-2xl lg:text-[40px] leading-tight font-semibold mb-4;
+  }
+
+  .subtitle {
+    @apply text-[18px] lg:text-[20px] leading-relaxed mb-5 lg:mb-9;
+  }
+
+  .title-features-items {
+    @apply text-base lg:text-xl font-semibold;
+  }
+
+  .title-news {
+    @apply text-4xl font-semibold max-w-[350px] leading-normal;
+  }
+
+  .btn-hero {
+    @apply px-[35px] lg:px-[80px] py-[9px] lg:py-[16px] rounded-md text-xl font-medium bg-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.5)] backdrop-blur-md transition-all duration-300;
+  }
+
+  .btn-news {
+    @apply bg-primary hover:bg-black h-14 px-7 rounded-lg font-medium text-xl;
+  }
+
+  .background-hero {
+    @apply bg-hero bg-right lg:bg-center bg-cover bg-no-repeat;
+  }
+
+  .grid-product {
+    @apply border hover:border-accent rounded-[18px];
+  }
+
+  .icon-add {
+    @apply bg-gray-200 w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:bg-gray-300;
+  }
+
+  .icon-social {
+    @apply w-14 h-14 text-3xl bg-gray-700 hover:bg-accent rounded-full flex justify-center items-center;
+  }
+
+  .input-news {
+    @apply h-14 px-6 outline-none placeholder:text-gray-400 text-gray-600 rounded-lg;
+  }
+
+  .border-footer {
+    @apply lg:border-b lg:border-opacity-75 lg:border-gray-300;
+  }
+}
