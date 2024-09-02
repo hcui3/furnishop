@@ -8,12 +8,8 @@ const Hero = () => {
       <div className="container text-center">
         <h1 className="title-hero mb-8">{title} </h1>
         <h2 className="subtitle-hero mb-8 lg:mb-16">{subtitle} </h2>
-        <button className="btn-hero">{cta} </button>
-
-        {/* stats */}
-        <div className="mt-28">
-          <Stats />
-        </div>
+        <button className="btn-hero mb-28">{cta} </button>
+        <Stats />
       </div>
     </section>
   );
