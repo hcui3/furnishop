@@ -24,12 +24,12 @@ const ProductSlider = () => {
 
         return (
           <SwiperSlide key={index}>
-            <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-7 mb-32">
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-7 mb-32">
               {productList.map((product, index) => {
                 const { image, name, price, oldPrice } = product;
 
                 return (
-                  <div className="w-[290px] h-[360px]" key={index}>
+                  <div className="w-[290px] h-[360px] mx-auto" key={index}>
                     {/* image */}
                     <div className="grid-product max-w-[285px] h-full max-h-[292px] flex items-center justify-center mb-4 relative transition-all">
                       <img src={image} alt="" />

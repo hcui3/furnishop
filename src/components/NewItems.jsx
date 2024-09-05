@@ -5,11 +5,11 @@ const NewItems = () => {
   const { title, subtitle, link, icon: Icon } = newInStore;
 
   return (
-    <section className="section relative mb-6">
+    <section className="section relative">
       <div className="container">
         <div className="flex flex-col lg:flex-row">
           {/* text */}
-          <div className="flex items-baseline gap-x-6 mb-6 lg:flex-col lg:mb-0">
+          <div className="flex items-baseline gap-6 lg:flex-col lg:gap-4">
             <h2 className="title max-w-[200px] lg:mt-8 lg:mb-20">{title} </h2>
             <p className="max-w-[240px] lg:mb-12">{subtitle} </p>
 
